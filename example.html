@@ -1,0 +1,47 @@
+<html>
+<head>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+    div.border {
+        border: 3px solid pink; 
+        margin: 5px; 
+        padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container col-md-6 col-md-offset-3">
+    <div class="row">
+    <div class="border">
+        <h1>I love you, Bernard</h1>
+        <p>This is inside an unnamed div. The pink border illustrates the 
+            edges of the div.</p>
+        <input type="text" placeholder="Don't care about this"></input>
+    </div>
+    </div>
+    <div class="row">
+    <div class="border">
+        <p>This is inside a div with id=focuselement.</p>
+        <p>A div is an "invalid" type to focus. The script will therefore find
+            the first object matching a link, text-input, textarea or selector
+            within this div.</p>
+        <p>I could've put id=focuselement directly on an input-field instead.
+            Then that element would be directly focused without searching</p>
+        <form id="focuselement" action="">
+            <input type="text" placeholder="Focus here, please"></input>
+            <input type="text" placeholder="Second input != focus"></input>
+            <p><a href="">A link can be focused too</a></p>
+        </form>    
+        <p></p>
+    </div>
+    </div>
+    </div>
+
+    <!-- Remember to include jquery -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+
+    <!-- And the focus-script, of course -->
+    <script src="focus.js"></script>
+</body>
+</html>
