@@ -28,7 +28,9 @@ $( document ).ready(function() {
     if (wrongTypes.indexOf(type) != -1)
         focuselement = findInnerFocusElement(focuselement);
 
+    var x = window.scrollX, y = window.scrollY;
     focuselement.focus();
+    window.scrollTo(x, y);
     
 
     function getElementType(element) {
